@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lorem Manga & Comics Inc.</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="#home" class="w3-bar-item w3-button w3-wide m4 s4 w3-hide-small"
+          ><i
+            class="fa fa-optin-monster"
+            style="font-size: 25px; color: red"
+          ></i>
+          | Lorem Manga & Comics Inc.
+        </a>
+        <a href="#home" class="w3-bar-item w3-button m4 s4 w3-hide-large w3-hide-medium"
+          ><i
+            class="fa fa-optin-monster"
+            style="font-size: 20px; color: red"
+          ></i>
+          | Lorem Manga & Comics Inc.
+        </a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small w3-hide-medium">
+          <a href="#about" class="w3-bar-item w3-button">HOME</a>
+          <a href="#products" class="w3-bar-item w3-button"
+            ><i class="fa fa-th"></i> PRODUCTS</a
+          >
+          <a href="#slider" class="w3-bar-item w3-button"
+            ><i class="fa fa-user"></i> ADVERTISEMENTS</a
+          >
+          <a href="#pricing" class="w3-bar-item w3-button"
+            ><i class="fa fa-usd"></i> PRICING</a
+          >
+          <a href="#contact" class="w3-bar-item w3-button"
+            ><i class="fa fa-envelope"></i> CONTACT</a
+          >
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large"
+          onclick="w3_open()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-large w3-padding-16"
+        >Close ×</a
+      >
+      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"
+        >HOME</a
+      >
+      <a href="#products" onclick="w3_close()" class="w3-bar-item w3-button"
+        >PRODUCTS</a
+      >
+      <a href="#slider" onclick="w3_close()" class="w3-bar-item w3-button"
+        >ADVERTISEMENTS</a
+      >
+      <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button"
+        >PRICING</a
+      >
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button"
+        >CONTACT</a
+      >
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+      <div class="w3-display-left w3-text-white" style="padding: 48px">
+        <span class="w3-jumbo w3-hide-small" style="color: white"
+          >Welcome to our comic book shop.</span
+        ><br />
+        <span
+          class="w3-xxlarge w3-hide-large w3-hide-medium"
+          style="color: black"
+          >Welcome to our comic book shop.</span
+        ><br />
+        <span class="w3-xlarge" style="color: white"
+          >Check out our awesome collection.</span
+        >
+        <p>
+          <a
+            href="#products"
+            class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"
+            >Our Products.</a
+          >
+        </p>
+      </div>
+      <div
+        class="w3-display-bottomleft w3-text-grey w3-large"
+        style="padding: 24px 48px"
+      >
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <div
+      class="w3-container"
+      style="padding-top: 40px; padding-bottom: 40px"
+      id="about"
+    >
+      <h3 class="w3-center">ABOUT THE COMPANY</h3>
+      <p class="w3-center w3-large">History of the company.</p>
+      <div class="w3-row-padding w3-center" style="margin-top: 4px">
+        <div class="w3-center">
+          <i
+            class="fa fa-optin-monster"
+            style="font-size: 48px; color: red"
+          ></i>
+          <p class="w3-large">
+            Nisi occaecat tempor voluptate sint non tempor nisi enim ullamco
+            eiusmod. Sint ea dolore sunt anim magna ad exercitation magna.
+            Laboris proident voluptate incididunt tempor officia mollit eiusmod.
+            Excepteur dolor sit pariatur non eiusmod Lorem sit. Fugiat aliqua
+            officia in irure deserunt aute non nostrud duis amet.Ex proident
+            fugiat anim magna. Nisi tempor nulla sunt aliqua minim sint ad magna
+            non ea magna ut. In ea et mollit enim officia Lorem tempor
+            voluptate. Aliqua commodo laboris veniam tempor nulla laboris
+            consequat anim aliqua anim incididunt reprehenderit aliquip quis. Id
+            velit Lorem sit amet nisi.Officia et sit laboris ad magna. Do quis
+            reprehenderit ut dolore exercitation ipsum reprehenderit consectetur
+            nisi laborum. Aliqua nisi qui commodo sunt et officia qui tempor non
+            est fugiat cillum tempor consectetur. Sit incididunt occaecat enim
+            consectetur qui sint dolor elit. Veniam eu commodo mollit
+            consectetur est cupidatat nostrud elit nulla et ut.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Promo Section - "Good Reads" -->
+    <div
+      class="w3-container w3-light-grey"
+      style="padding: 60px 16px 16px 60px"
+    >
+      <div class="w3-row-padding">
+        <div class="w3-col m6 w3-center" id="reads_center">
+          <h3>Good Read of the week.</h3>
+          <p>
+            Sword Art Online (Japanese: ソードアート・オンライン, Hepburn: Sōdo
+            Āto Onrain) is a Japanese light novel series written by Reki
+            Kawahara and illustrated by abec. The series takes place in the near
+            future and focuses on protagonist Kazuto "Kirito" Kirigaya and Asuna
+            Yuuki as they play through various virtual reality MMORPG worlds.
+            Kawahara originally wrote the series as a web novel on his website
+            from 2002 to 2008. The light novels began publication on ASCII Media
+            Works' Dengeki Bunko imprint from April 10, 2009, with a spin-off
+            series launching in October 2012. The series has spawned twelve
+            manga adaptations published by ASCII Media Works and Kadokawa. The
+            novels and the manga adaptations have been licensed for release in
+            North America by Yen Press.
+          </p>
+          <p>
+            <a href="#products" class="w3-button w3-black"
+              ><i class="fa fa-th"> </i> View Our Products</a
+            >
+          </p>
+        </div>
+        <div class="w3-col m6">
+          <img
+            class="w3-image w3-round-large"
+            src="./img/reads.jpg"
+            alt="Comic Highlights"
+            width="700"
+            height="394"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Products Section -->
+    <div
+      class="w3-container"
+      style="padding: 60px 16px 16px 40px"
+      id="products"
+    >
+      <h3 class="w3-center">OUR PRODUCTS</h3>
+      <p class="w3-center w3-large">What we sell :)</p>
+
+      <div class="w3-row-padding" style="margin-top: 35px">
+        <div class="comic_img w3-col l3 m6">
+          <img
+            src="./img/comic_1.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="Comic 1 | Price Ksh.300"
+          />
+          <div><h1>Ksh.300</h1></div>
+        </div>
+        <div class="w3-col l3 m6">
+          <img
+            src="./img/comic_2.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="Comic 2 | Price Ksh.300"
+          />
+        </div>
+        <div class="w3-col l3 m6">
+          <img
+            src="./img/comic_3.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="Comic 3 | Price Ksh.300"
+          />
+        </div>
+        <div class="w3-col l3 m6">
+          <img
+            src="./img/comic_4.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="Comic 4 | Price Ksh.300"
+          />
+        </div>
+        <!--<iframe src="https://www.w3schools.com"></iframe> -->
+      </div>
+
+      <div class="w3-row-padding w3-section">
+        <div class="w3-col l3 m6">
+          <img
+            src="./img/comic_5.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="Comic 5 | Price Ksh.300"
+          />
+        </div>
+        <div class="w3-col l3 m6">
+          <img
+            src="./img/comic_6.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="Comic 6 | Price Ksh.300"
+          />
+        </div>
+        <div class="w3-col l3 m6">
+          <img
+            src="./img/comic_7.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="Comic 7 | Price Ksh.300"
+          />
+        </div>
+        <div class="w3-col l3 m6">
+          <img
+            src="./img/comic_8.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="Comic 8 | Price Ksh.300"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div
+      id="modal01"
+      class="w3-modal w3-black"
+      onclick="this.style.display='none'"
+    >
+      <span
+        class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright"
+        title="Close Modal Image"
+        >×</span
+      >
+      <div
+        class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
+      >
+        <img id="img01" class="w3-image" />
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
+    </div>
+
+    <!-- Promo Section "Statistics" -->
+    <div class="w3-container w3-row w3-center w3-black w3-padding-24">
+      <div class="w3-quarter">
+        <span class="w3-xxlarge"><marquee width="50%" direction="right">1400+</marquee></span>
+        <br /><marquee width="50%" direction="left">Marvel Comics</marquee>
+      </div>
+      <div class="w3-quarter">
+        <span class="w3-xxlarge"><marquee width="50%" direction="right">5500+</marquee></span>
+        <br /><marquee width="50%" direction="left">Manga Comics</marquee>
+      </div>
+      <div class="w3-quarter">
+        <span class="w3-xxlarge"><marquee width="50%" direction="right">1500+</marquee></span>
+        <br /><marquee width="50%" direction="left">DC Comics</marquee>
+      </div>
+      <div class="w3-quarter">
+        <span class="w3-xxlarge"><marquee width="50%" direction="right">1000+</marquee></span>
+        <br /><marquee width="50%" direction="left">Indie Comics</marquee>
+      </div>
+    </div>
+
+    <!-- AD Section -->
+    <div id="slider" class="w3-container" id="products" style="padding: 0">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="./img/ad1.png" alt="Advertisment" style="width: 100%" />
+            <div class="carousel-caption">
+              <h3>Fearless, E.X.O, Conan</h3>
+              <p>Release date 2022.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="./img/ad2.png" alt="Advertisment" style="width: 100%" />
+            <div class="carousel-caption">
+              <h3>Nocterra, The Wrong Earth</h3>
+              <p>Release date 2022.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="./img/ad3.png" alt="Advertisment" style="width: 100%" />
+            <div class="carousel-caption">
+              <h3>The Magic Order, Strange, The Mirror War</h3>
+              <p>Release date 2022.</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./img/ad4.png" alt="Advertisment" style="width: 100%" />
+            <div class="carousel-caption">
+              <h3>Moonknight, Captain America, Labyrinth</h3>
+              <p>Release date 2022.</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./img/ad5.png" alt="Advertisment" style="width: 100%" />
+            <div class="carousel-caption">
+              <h3>Woman Without Fear, Crossover, Captain America & Iron Man</h3>
+              <p>Release date 2022.</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./img/ad6.png" alt="Advertisment" style="width: 100%" />
+            <div class="carousel-caption">
+              <h3>G.I Joe, The wicked + The Divine, The Complete Wraith</h3>
+              <p>Release date 2022.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div
+      class="w3-container w3-center w3-white"
+      style="padding: 40px 16px"
+      id="pricing"
+    >
+      <h3>PRICING</h3>
+      <div
+        className="w3-responsive"
+        style="overflow-x: auto; padding: 40px 16px 40px 16px"
+      >
+        <table class="w3-table w3-bordered w3-striped w3-card-4">
+          <tr class="w3-red">
+            <th>COMIC NAME</th>
+            <th>NO. PAGES</th>
+            <th>PRICE</th>
+          </tr>
+          <tr>
+            <th>Nocterra</th>
+            <td>No. Pages 29</td>
+            <td>Ksh. 300</td>
+          </tr>
+          <tr>
+            <th>Fearless</th>
+            <td>No. Pages 29</td>
+            <td>Ksh. 300</td>
+          </tr>
+          <tr>
+            <th>Strange</th>
+            <td>No. Pages 29</td>
+            <td>Ksh. 300</td>
+          </tr>
+          <tr>
+            <th>Crossover</th>
+            <td>No. Pages 29</td>
+            <td>Ksh. 300</td>
+          </tr>
+          <tr>
+            <th>Captain America & Iron Man</th>
+            <td>No. Pages 29</td>
+            <td>Ksh. 300</td>
+          </tr>
+        </table>
+      </div>
+      <div style="width: 70%; margin: 0 auto">
+        <form method="POST" target="_blank">
+          <p style="color: black">
+            <input
+              class="w3-input w3-border"
+              type="text"
+              placeholder="Name"
+              required
+              name="Name"
+            />
+          </p>
+          <p style="color: black">
+            <input
+              class="w3-input w3-border"
+              type="text"
+              placeholder="Email"
+              required
+              name="Email"
+            />
+          </p>
+          <p style="color: black">
+            <input
+              class="w3-input w3-border"
+              type="text"
+              placeholder="Name of Comic Book"
+              required
+              name="Name of Comic Book"
+            />
+          </p>
+          <p style="color: black">
+            <input
+              class="w3-input w3-border"
+              type="text"
+              placeholder="Price"
+              required
+              name="Price"
+            />
+          </p>
+          <p>
+            <button class="w3-button w3-black w3-center" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND BUY REQUEST
+            </button>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div
+      class="w3-container w3-black"
+      style="padding: 10px 16px 0px 16px"
+      id="contact"
+    >
+      <h3 class="w3-center">CONTACT</h3>
+      <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+      <div style="margin-top: 48px">
+        <div class="w3-center w3-wide" style="width: 50%; margin: 0 auto">
+          <p>
+            <i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>
+            Nairobi, Kenya.
+          </p>
+          <br />
+          <p>
+            <i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>
+            Phone: +(254) 00 000 0000
+          </p>
+          <br />
+          <p>
+            <i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>
+            Email: mail@mail.com
+          </p>
+          <br />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black" style="padding: 16px ">
+      <a href="#home" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+      >
+      <div class="w3-large w3-section">
+       <i
+            class="fa fa-optin-monster"
+            style="font-size: 30px; color: red"
+          ></i> | Lorem Manga & Comics Inc.
+      </div>
+    </footer>
+
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
